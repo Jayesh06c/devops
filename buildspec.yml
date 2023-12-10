@@ -10,8 +10,8 @@ phases:
         commands:
             - python --version
             - pylint dcrm || true
-              pylint devops || true
-              pylint website || true
+            - pylint devops || true
+            - pylint website || true
 artifacts:
     files:
         - '**/*'
