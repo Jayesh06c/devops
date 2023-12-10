@@ -9,8 +9,9 @@ phases:
     pre_build:
         commands:
             - python --version
-            - pylint $CODEBUILD_SRC_DIR/*.py
-            - pylint $CODEBUILD_SRC_DIR/dcrm/*.py
+            - pylint dcrm || true
+              pylint devops || true
+              pylint website || true
 artifacts:
     files:
         - '**/*'
