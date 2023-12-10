@@ -62,33 +62,33 @@ WSGI_APPLICATION = 'dcrm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
+    }
+}
+
+
 # DATABASES = {
+
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': str(BASE_DIR / 'db.sqlite3'),
-#     }
+
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+#         'NAME': 'jayeshcd',
+
+#         'USER': 'postgres',
+
+#         'PASSWORD':'Na#21#21#7531',
+
+#         'HOST': 'jay328.chwlezgyi7rm.eu-west-1.rds.amazonaws.com',  # RDS endpoint
+
+#         'PORT': '5432',  # Adjust the port based on your RDS configuration
+
 # }
 
-
-DATABASES = {
-
-    'default': {
-
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-
-        'NAME': 'jayeshcd',
-
-        'USER': 'postgres',
-
-        'PASSWORD':'Na#21#21#7531',
-
-        'HOST': 'jay328.chwlezgyi7rm.eu-west-1.rds.amazonaws.com',  # RDS endpoint
-
-        'PORT': '5432',  # Adjust the port based on your RDS configuration
-
-}
-
-}
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
