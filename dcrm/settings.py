@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-jcxge@8cwms-4-$&qia^6p+^8-qwrsw7vey#0e6e326apg3mvo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['54.246.238.88','328jay.eba-sbadtjp4.eu-west-1.elasticbeanstalk.com',"34.255.182.5"]
+ALLOWED_HOSTS = ['54.246.238.88','328jay.eba-sbadtjp4.eu-west-1.elasticbeanstalk.com','34.255.182.5','10.0.1.53']
 
 
 # Application definition
@@ -62,12 +62,12 @@ WSGI_APPLICATION = 'dcrm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'db.sqlite3',
+#     }
+# }
 
 
 DATABASES = {
@@ -87,6 +87,7 @@ DATABASES = {
         'PORT': '5432',  # Adjust the port based on your RDS configuration
 
 }
+
 }
 
 # DATABASES = {
