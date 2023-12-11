@@ -90,16 +90,16 @@ DATABASES = {
 
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql', 
-#         'NAME': 'student',
-#         'USER': 'admin',
-#         'PASSWORD': 'jayesh06',
-#         'HOST': 'database-2.cxn3hom0vuvq.us-east-1.rds.amazonaws.com',   # Or an IP Address that your DB is hosted on
-#         'PORT': '3306',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'student',
+        'USER': 'admin',
+        'PASSWORD': 'jayesh06',
+        'HOST': 'database-2.cxn3hom0vuvq.us-east-1.rds.amazonaws.com',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
