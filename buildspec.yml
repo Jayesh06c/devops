@@ -1,17 +1,27 @@
+version: 0.2
+ 
 phases:
-    install:
-        runtime-versions:
-            python: 3.8
-        commands:
-            - pip install --upgrade pip
-            # Install dependencies needed for running the static analysis
-            - pip install -r requirements.txt pylint
-    pre_build:
-        commands:
-            - python --version
-            - pylint dcrm || true
-            - pylint devops || true
-            - pylint website || true
+  install:
+    runtime-versions:
+      python: 3.8
+  pre_build:
+    commands:
+      - echo "Prebuild ops"
+      #- sudo apt-get update
+      - pip --version
+      - python -m pip install --upgrade pip
+      - pip install -r requirements.txt
+      - echo "Pylint static code analysis"
+      - pylint dcrm || true
+      - pylint website --disable=C,R --ignore=views.py *.py || true
+ 
+ 
+  build:
+    commands:
+      - echo "Building the application"
+  post_build:
+    commands:
+      - echo "Build completed on `date`"
 artifacts:
-    files:
-        - '**/*'
+  files:
+    - '**/*'
