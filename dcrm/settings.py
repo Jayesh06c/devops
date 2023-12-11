@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-jcxge@8cwms-4-$&qia^6p+^8-qwrsw7vey#0e6e326apg3mvo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['328jay.eba-sbadtjp4.eu-west-1.elasticbeanstalk.com',"34.255.182.5"]
+ALLOWED_HOSTS = ['54.246.238.88','328jay.eba-sbadtjp4.eu-west-1.elasticbeanstalk.com',"34.255.182.5"]
 
 
 # Application definition
@@ -70,36 +70,35 @@ DATABASES = {
 }
 
 
-# DATABASES = {
-
-#     'default': {
-
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-
-#         'NAME': 'jayeshcd',
-
-#         'USER': 'postgres',
-
-#         'PASSWORD':'Na#21#21#7531',
-
-#         'HOST': 'jay328.chwlezgyi7rm.eu-west-1.rds.amazonaws.com',  # RDS endpoint
-
-#         'PORT': '5432',  # Adjust the port based on your RDS configuration
-
-# }
-
-# }
-
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'student',
-        'USER': 'admin',
-        'PASSWORD': 'jayesh06',
-        'HOST': 'database-2.cxn3hom0vuvq.us-east-1.rds.amazonaws.com',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
-    }
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'jayeshcd',
+
+        'USER': 'postgres',
+
+        'PASSWORD':'Na#21#21#7531',
+
+        'HOST': 'jay328.chwlezgyi7rm.eu-west-1.rds.amazonaws.com',  # RDS endpoint
+
+        'PORT': '5432',  # Adjust the port based on your RDS configuration
+
 }
+}
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql', 
+#         'NAME': 'student',
+#         'USER': 'admin',
+#         'PASSWORD': 'jayesh06',
+#         'HOST': 'database-2.cxn3hom0vuvq.us-east-1.rds.amazonaws.com',   # Or an IP Address that your DB is hosted on
+#         'PORT': '3306',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
