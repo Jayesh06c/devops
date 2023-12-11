@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-jcxge@8cwms-4-$&qia^6p+^8-qwrsw7vey#0e6e326apg3mvo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['328jay.eba-sbadtjp4.eu-west-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['328jay.eba-sbadtjp4.eu-west-1.elasticbeanstalk.com',"34.255.182.5"]
 
 
 # Application definition
@@ -62,12 +62,12 @@ WSGI_APPLICATION = 'dcrm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
+    }
+}
 
 
 # DATABASES = {
@@ -90,16 +90,16 @@ WSGI_APPLICATION = 'dcrm.wsgi.application'
 
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'student',
-        'USER': 'admin',
-        'PASSWORD': 'jayesh06',
-        'HOST': 'database-2.cxn3hom0vuvq.us-east-1.rds.amazonaws.com',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql', 
+#         'NAME': 'student',
+#         'USER': 'admin',
+#         'PASSWORD': 'jayesh06',
+#         'HOST': 'database-2.cxn3hom0vuvq.us-east-1.rds.amazonaws.com',   # Or an IP Address that your DB is hosted on
+#         'PORT': '3306',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
