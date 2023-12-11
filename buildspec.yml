@@ -10,7 +10,7 @@ phases:
       #- sudo apt-get update
       - pip --version
       - python -m pip install --upgrade pip
-      - pip install -r requirements.txt
+      - pip install -r requirements.txt pylint
       - echo "Pylint static code analysis"
       - pylint dcrm || true
       - pylint website --disable=C,R --ignore=views.py *.py || true
