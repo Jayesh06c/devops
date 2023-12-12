@@ -14,6 +14,8 @@ phases:
       - echo "Pylint static code analysis"
       - pylint dcrm || true
       - pylint website --disable=C,R --ignore=views.py *.py || true
+      - python manage.py makemigrations
+      - python manage.py migrate
  
  
   build:
