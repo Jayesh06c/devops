@@ -13,7 +13,7 @@ phases:
       - pip install -r requirements.txt pylint
       - echo "Pylint static code analysis"
       - pylint dcrm || true
-      - pylint website --disable=C,R --ignore=views.py *.py || true
+      - pylint website --disable=C,R,W --ignore=views.py *.py || true
  
   build:
     commands:

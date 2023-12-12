@@ -80,7 +80,7 @@ DATABASES = {
 
         'USER': 'postgres',
 
-        'PASSWORD':'Na#21#21#7531',
+        'PASSWORD':'Jayesh06',
 
         'HOST': 'jay328.chwlezgyi7rm.eu-west-1.rds.amazonaws.com',  # RDS endpoint
 
